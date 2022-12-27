@@ -1,0 +1,99 @@
+@keyframes enter {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 10% 5% calc(10% + 64px);
+  text-align: center;
+  font-family: crushed, sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  overflow-y: auto;
+}
+
+.headline {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.headline h1,
+.headline h2,
+.headline h3 {
+  transform: translateX(200%);
+  animation: enter 1s ease forwards;
+}
+
+.headline h2 {
+  animation-delay: 0.25s;
+}
+
+.headline h3 {
+  animation-delay: 0.5s;
+}
+
+.content {
+  width: 100%;
+  transition: all 1s ease;
+  opacity: 0;
+  animation: fade 3s ease forwards;
+}
+
+.contentBlock {
+  margin-bottom: 2rem;
+}
+
+.link {
+  font-size: 2.5rem;
+  transition: color 1s ease;
+  color: var(--text-color);
+}
+
+.link:hover {
+  color: var(--theme-hover);
+}
+
+.link:visited {
+  color: var(--text-color);
+}
+
+.linkLight {
+  font-size: 1.25rem;
+  transition: color 1s ease;
+  color: var(--light-text-color-light);
+}
+
+.rnpLink:hover {
+  transition: color 1s ease;
+  color: var(--rnpRed);
+}
+
+.spotifyLink:hover {
+  transition: color 1s ease;
+  color: var(--spotify);
+}
+
+.soundCloudLink:hover {
+  transition: color 1s ease;
+  color: var(--soundCloud);
+}

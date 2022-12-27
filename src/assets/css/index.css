@@ -1,0 +1,30 @@
+@import './default.css';
+
+:root {
+  --background-color: #781392;
+  --text-color: #ffffff;
+
+  --rnpBlue: #232944;
+  --rnpRed: #bf2932;
+  --iw: #e81f57;
+  --savvy: #408bc4;
+  --savadoro: rgb(38, 85, 120);
+  --phalcon: rgb(106, 210, 144);
+
+  --spotify: #1db954;
+  --soundCloud: #ff7700;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.layout {
+  height: 100vh;
+}
