@@ -1,16 +1,8 @@
-@keyframes enter {
-  0% {
-    transform: translateX(200%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
-
 @keyframes fade {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -32,31 +24,19 @@
   overflow-y: auto;
 }
 
+.homeContainer {
+  opacity: 0;
+  animation: fade 0.5s ease forwards;
+}
+
 .headline {
   width: 100%;
   margin-bottom: 2rem;
 }
 
-.headline h1,
-.headline h2,
-.headline h3 {
-  transform: translateX(200%);
-  animation: enter 1s ease forwards;
-}
-
-.headline h2 {
-  animation-delay: 0.25s;
-}
-
-.headline h3 {
-  animation-delay: 0.5s;
-}
-
 .content {
   width: 100%;
   transition: all 1s ease;
-  opacity: 0;
-  animation: fade 3s ease forwards;
 }
 
 .contentBlock {

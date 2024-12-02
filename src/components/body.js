@@ -34,14 +34,16 @@ const Body = () => {
               Spotify
             </a>
             <div>and</div>
-            <a
-              href="https://soundcloud.com/garyanewsome"
-              className={[styles.soundCloudLink, styles.link].join(' ')}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              SoundCloud
-            </a>
+            <div className={styles.contentBlock}>
+              <a
+                href="https://soundcloud.com/garyanewsome"
+                className={[styles.soundCloudLink, styles.link].join(' ')}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                SoundCloud
+              </a>
+            </div>
           </div>
         </div>
       </div>

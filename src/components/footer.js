@@ -2,7 +2,7 @@ import React from 'react'
 
 import { LinkedIn } from './social/LinkedIn'
 import { GitHub } from './social/GitHub'
-import { Twitter } from './social/Twitter'
+import { BlueSky } from './social/BlueSky'
 import { Spotify } from './social/Spotify'
 import { SoundCloud } from './social/SoundCloud'
 
@@ -19,8 +19,8 @@ const Footer = () => {
       <a href="https://www.github.com/garyanewsome" rel="noopener noreferrer" target="_blank">
         <GitHub size={size} />
       </a>
-      <a href="https://twitter.com/garyanewsome" rel="noopener noreferrer" target="_blank">
-        <Twitter size={size} />
+      <a href="https://bsky.app/profile/garyanewsome.bsky.social" rel="noopener noreferrer" target="_blank">
+        <BlueSky size={size} />
       </a>
       <a href="https://open.spotify.com/artist/5tWnRXHI8g2I0adOEzNh7X" rel="noopener noreferrer" target="_blank">
         <Spotify size={size} />
